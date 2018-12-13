@@ -75,15 +75,6 @@ for(gradeCounter = 0; gradeCounter<grades.length; gradeCounter++){
 console.log("**End Grades**")
 //End Grades
 
-// Solution without Moooooos
-// var htmlstring = "";
-// var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-// for(var i = 0; i < sentenceArray.length; i++){
-//     htmlstring = `${htmlstring} ${sentenceArray[i]}`;
-//   }
-// Create link to HTML content
-// var cow = document.querySelector('#cow-sentence');
-// cow.innerHTML = htmlstring
 
 var mooString = "";
 var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
