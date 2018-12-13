@@ -78,10 +78,10 @@ console.log("**End Grades**")
 
 var mooString = "";
 var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-for(var mooCounter = 0; mooCounter < sentenceArray.length; mooCounter++){
+for(var mooCounter = 0; mooCounter<sentenceArray.length; mooCounter++){
     
     if (mooCounter%3 === 0 && mooCounter!=0) {
-      mooString = `${mooString} MOOOOO ${sentenceArray[mooCounter]}`; 
+      mooString = `${mooString} MOOOOOOOO ${sentenceArray[mooCounter]}`; 
     } else {
       mooString = `${mooString} ${sentenceArray[mooCounter]}`; 
     }
@@ -90,3 +90,18 @@ for(var mooCounter = 0; mooCounter < sentenceArray.length; mooCounter++){
   // Create link to HTML content
   var cow = document.querySelector('#cow-sentence');
   cow.innerHTML = mooString
+
+  //End Interrupting Cow
+
+  var restString = "";
+  var restContainer = document.querySelector("#restaurants-list");
+
+var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
+
+for(var restCounter = 1; restCounter<downtownRestaurants.length; restCounter++){
+
+    restString = restString + `<li>${downtownRestaurants[restCounter]}</li>`;
+    restContainer.innerHTML = restString;
+}
+
+
